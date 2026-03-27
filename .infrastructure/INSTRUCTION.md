@@ -1,6 +1,18 @@
+To see pod IP and pod name use command:
+
+    kubectl get pods -n todoapp
+
+To map ports use command:
+
+        kubectl port-forward pods/<pod_name> 8080:8080
+
 To check if app is running use command:
 
     curl localhost:8080
+
+To go insede of pod use command:
+
+    kubectl exec -it <pod_name> -- sh
 
 To check config files use commands:
 
